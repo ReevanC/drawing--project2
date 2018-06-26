@@ -5,7 +5,7 @@ function setup() {
   p5Canvas = createCanvas(800, 600);
   p5Canvas.parent("#p5-canvas");
   myName = select("#my-name");
-  myName.html("[Your Name Here]"); // enter your name here!
+  myName.html("Reevan"); // enter your name here!
 }
 
  /*
@@ -25,4 +25,12 @@ function draw() {
   background(0, 255, 0); // try changing this to a blue background
   fill(255, 204, 0);    // Always call fill() before the shape you want to fill in.
   rect(30, 20, 55, 55); // Draw a 30x20 pixel rectangle at coordinate (55,55)
+  line(0,0,100,100);
+  drawThreePurpleCircles();
+}
+function drawThreePurpleCircles() {
+  fill("purple");
+  ellipse(300, 300, 300, 300);
+  ellipse(350, 350, 300, 300);
+  ellipse(400, 400, 300, 300);
 }
